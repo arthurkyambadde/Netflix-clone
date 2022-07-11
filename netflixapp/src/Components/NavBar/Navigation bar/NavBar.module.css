@@ -1,0 +1,54 @@
+.NavigationBarContainer {
+  width: 100vw;
+  overflow: hidden;
+  height: 70px;
+  padding: 10px 50px;
+  /* margin: 0 100px; */
+  /*  */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(14, 11, 11, 0.916);
+}
+
+.NavigationLinks_Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* color: white; */
+}
+
+.Navigation_Icon {
+  color: #e50914;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+.Profile_name {
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Icon_Image {
+  width: 24px;
+  cursor: pointer;
+}
+
+.profileInfo_container {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.PersonalProfile_Info {
+  display: flex;
+  align-items: center;
+  gap: 2.5px;
+}
+
+.Profile_Image {
+  height: 48px;
+  border-radius: 8px;
+}

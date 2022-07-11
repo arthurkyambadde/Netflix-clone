@@ -1,0 +1,24 @@
+.navigation_Link {
+  list-style: none;
+  /* flex-direction: row; */
+  cursor: pointer;
+  /* color: white; */
+}
+
+.navigationLinks_Container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+
+  /* display: inline-block; */
+}
+
+.navigationLinks_Container li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navigationLinks_Container li a:hover {
+  /* transform: scale(1.5); */
+  color: #e5e5e5;
+}

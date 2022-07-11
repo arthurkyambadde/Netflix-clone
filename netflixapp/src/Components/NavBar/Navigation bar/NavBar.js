@@ -5,6 +5,7 @@ import BellIcon from "./BellIcon";
 import classes from "./NavBar.module.css";
 import DropDownArrow from "./DropDownArrow";
 import ProfileImage from "./profileImage.png";
+import DropDown from "./DropDown";
 
 class NavBar extends React.Component {
   render() {
@@ -21,9 +22,14 @@ class NavBar extends React.Component {
           <BellIcon />
 
           <div className={classes["PersonalProfile_Info"]}>
-            <img className={classes["Profile_Image"]} src={ProfileImage} />
+            <img
+              className={classes["Profile_Image"]}
+              src={ProfileImage}
+              alt="profile"
+            />
             <DropDownArrow />
           </div>
+          <DropDown />
         </div>
       </div>
     );

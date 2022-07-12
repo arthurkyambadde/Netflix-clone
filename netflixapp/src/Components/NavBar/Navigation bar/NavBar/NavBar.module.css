@@ -52,3 +52,9 @@
   height: 48px;
   border-radius: 8px;
 }
+
+.DropDown_Menu {
+  position: absolute;
+  top: 500px;
+  right: 50px;
+}

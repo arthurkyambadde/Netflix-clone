@@ -1,4 +1,4 @@
-import NavBar from "./Components/NavBar/Navigation bar/NavBar";
+import NavBar from "./Components/NavBar/Navigation bar/NavBar/NavBar";
 
 function App() {
   return <NavBar></NavBar>;

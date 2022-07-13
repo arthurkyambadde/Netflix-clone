@@ -58,3 +58,8 @@
   top: 500px;
   right: 50px;
 }
+
+.hidden {
+  display: none;
+  opacity: 0;
+}

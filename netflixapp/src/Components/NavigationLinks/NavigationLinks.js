@@ -7,19 +7,19 @@ class NavigationLinks extends React.Component {
       <ul className={classes["navigationLinks_Container"]}>
         <li className={classes["navigation_Link"]}>
           {" "}
-          <a href="#">Home</a>{" "}
+          <a href="./home">Home</a>{" "}
         </li>
         <li className={classes["navigation_Link"]}>
-          <a href="#">Serie</a>
+          <a href="./series">Serie</a>
         </li>
         <li className={classes["navigation_Link"]}>
-          <a href="#">Films</a>
+          <a href="./films">Films</a>
         </li>
         <li className={classes["navigation_Link"]}>
-          <a href="#">Latest</a>
+          <a href="./latest">Latest</a>
         </li>
         <li className={classes["navigation_Link"]}>
-          <a href="#">My List</a>
+          <a href="./myList">My List</a>
         </li>
       </ul>
     );

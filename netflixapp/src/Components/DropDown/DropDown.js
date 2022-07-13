@@ -1,10 +1,14 @@
 import React from "react";
-import HelpIcon from "../Icons/HelpIcon";
-import PointerIcon from "../Icons/PointerIcon";
-import UserIcon from "../Icons/UserIcon";
+import HelpIcon from "../../Icons/HelpIcon";
+import PointerIcon from "../../Icons/PointerIcon";
+import UserIcon from "../../Icons/UserIcon";
 import classes from "./DropDown.module.css";
 
 class DropDown extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <div className={classes["DropDown_Menu"]}>

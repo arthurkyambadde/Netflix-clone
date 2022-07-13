@@ -7,6 +7,8 @@ import DropDownArrow from "../../Icons/DropDownArrow";
 import ProfileImage from "./profileImage.png";
 import DropDown from "../DropDown/DropDown";
 import UpwardPointerIcon from "../../Icons/UpwardPointerIcon";
+import NewArrivals from "../DropDown/NewArrivals";
+import NewArrivalArrow from "../../Icons/NewArrivalArrow";
 
 class NavBar extends React.Component {
   constructor() {
@@ -45,7 +47,11 @@ class NavBar extends React.Component {
         <div className={classes["profileInfo_container"]}>
           <SearchIcon />
           <p className={classes["Profile_name"]}>Arthur</p>
-          <BellIcon />
+          <div>
+            <BellIcon />
+            <NewArrivalArrow />
+            <NewArrivals />
+          </div>
 
           <div
             onMouseEnter={this.toggleDropDown}

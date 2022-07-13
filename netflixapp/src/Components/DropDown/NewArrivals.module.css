@@ -1,0 +1,56 @@
+.NewArrivals_Container {
+  position: absolute;
+  right: 150px;
+  top: 90px;
+  width: 450px;
+  padding: 10px 25px 10px 10px;
+  max-height: 400px;
+  color: #fff;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.829);
+  border: 1px solid rgb(172, 164, 164);
+}
+
+.NewArrival_Item {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  border-bottom: 1px solid rgb(172, 164, 164);
+  padding: 10px 5px;
+  height: 110px;
+}
+
+.NewArrival_Item-Image {
+  background-color: rgba(22, 27, 27, 0.485);
+  width: 33%;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 0;
+}
+
+.NewArrival_Item-Description {
+  background-color: rgba(24, 21, 28, 0.385);
+  width: 70%;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.NewArrival_Item-Description--Header {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.537);
+}
+
+.NewArrival_Item-Description--para {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.537);
+  font-size: 13px;
+  font-weight: 300;
+}

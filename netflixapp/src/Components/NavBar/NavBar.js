@@ -47,10 +47,12 @@ class NavBar extends React.Component {
           <p className={classes["Profile_name"]}>Arthur</p>
           <BellIcon />
 
-          <div className={classes["PersonalProfile_Info"]}>
+          <div
+            onMouseEnter={this.toggleDropDown}
+            onMouseLeave={this.toggleDropDown}
+            className={classes["PersonalProfile_Info"]}
+          >
             <img
-              onMouseEnter={this.toggleDropDown}
-              onMouseLeave={this.toggleDropDown}
               className={classes["Profile_Image"]}
               src={ProfileImage}
               alt="profile"

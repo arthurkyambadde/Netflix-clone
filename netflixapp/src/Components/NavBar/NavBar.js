@@ -45,7 +45,7 @@ class NavBar extends React.Component {
     }
 
     let NewArrivalContent;
-    if (this.state.showNewArrivals === true) {
+    if (this.state.showNewArrivals === false) {
       NewArrivalContent = <div></div>;
     } else {
       NewArrivalContent = (
@@ -66,11 +66,11 @@ class NavBar extends React.Component {
         <div className={classes["profileInfo_container"]}>
           <SearchIcon />
           <p className={classes["Profile_name"]}>Arthur</p>
-          <div>
-            <BellIcon
-              onMouseEnter={this.toggleNewArrivalMenu}
-              onMouseLeave={this.toggleNewArrivalMenu}
-            />
+          <div
+            onMouseEnter={this.toggleNewArrivalMenu}
+            onMouseLeave={this.toggleNewArrivalMenu}
+          >
+            <BellIcon />
             <div>{NewArrivalContent}</div>
           </div>
 

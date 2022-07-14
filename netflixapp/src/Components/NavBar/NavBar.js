@@ -57,7 +57,10 @@ class NavBar extends React.Component {
     }
 
     return (
-      <div className={classes["NavigationBarContainer"]}>
+      <div
+        className={classes["NavigationBarContainer"]}
+        style={this.props.styles}
+      >
         <div className={classes["NavigationLinks_Header"]}>
           <h1 className={classes["Navigation_Icon"]}>NETFLIX</h1>
           <NavigationLinks />
@@ -87,7 +90,7 @@ class NavBar extends React.Component {
             <DropDownArrow />
           </div>
 
-          <div>{menuStatus} </div>
+          <div>{menuStatus}</div>
         </div>
       </div>
     );

@@ -15,8 +15,15 @@ class NavBar extends React.Component {
     super();
     this.state = {
       showMenu: false,
+      showNewArrivals: false,
     };
   }
+
+  toggleNewArrivalMenu = () => {
+    this.setState({
+      showNewArrivals: !this.state.showNewArrivals,
+    });
+  };
 
   toggleDropDown = () => {
     this.setState({
@@ -37,6 +44,18 @@ class NavBar extends React.Component {
       );
     }
 
+    let NewArrivalContent;
+    if (this.state.showNewArrivals === true) {
+      NewArrivalContent = <div></div>;
+    } else {
+      NewArrivalContent = (
+        <div>
+          <NewArrivalArrow />
+          <NewArrivals />
+        </div>
+      );
+    }
+
     return (
       <div className={classes["NavigationBarContainer"]}>
         <div className={classes["NavigationLinks_Header"]}>
@@ -48,9 +67,11 @@ class NavBar extends React.Component {
           <SearchIcon />
           <p className={classes["Profile_name"]}>Arthur</p>
           <div>
-            <BellIcon />
-            <NewArrivalArrow />
-            <NewArrivals />
+            <BellIcon
+              onMouseEnter={this.toggleNewArrivalMenu}
+              onMouseLeave={this.toggleNewArrivalMenu}
+            />
+            <div>{NewArrivalContent}</div>
           </div>
 
           <div

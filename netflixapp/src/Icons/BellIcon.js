@@ -1,12 +1,12 @@
 import React from "react";
-import classes from "./Icon.module.css";
+import classes from "./Bell_Icon.module.css";
 
 class BellIcon extends React.Component {
   render() {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className={classes["Icon_Image"]}
+        className={classes["Bell_Icon"]}
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"

@@ -29,6 +29,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 15px;
 }
 
 .BrowseMenu_Container {
@@ -46,4 +47,19 @@
   fill: #fff;
   width: 18px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 880px) {
+  .navigation_Link {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .BrowseMenu_Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
 }
